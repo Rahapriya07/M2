@@ -1,4 +1,6 @@
 # EX-06 - Looping
+## Name:Raha Priya Dharshini M
+## Reg no.:212224240124
 ## AIM:
 Write a C program to print even numbers ranging from M to N (including M and N values) in reverse order.
 
@@ -33,7 +35,8 @@ int main()
 ```
 
 ## OUTPUT:
-![Screenshot 2025-04-30 225033](https://github.com/user-attachments/assets/8fce742a-c5a5-40fe-9b59-a0464d46c76f)
+![Screenshot 2025-05-22 233834](https://github.com/user-attachments/assets/a9e0d8c0-3daf-4a27-8b3e-32d1048e2411)
+
 
 ## RESULT:
 Thus the program to print even numbers ranging from M to N (including M and N values) has been executed successfully
@@ -77,7 +80,8 @@ return 0;
 
 
 ## OUTPUT:
-![Screenshot 2025-04-30 225619](https://github.com/user-attachments/assets/44845ce4-691f-4064-8133-d611bb446fa9)
+![Screenshot 2025-05-22 233932](https://github.com/user-attachments/assets/2719ba09-e7ab-4b4f-afe7-d8f60f78f052)
+
 
 
 
@@ -130,7 +134,8 @@ int main() {
 }
 ```
 ## OUTPUT:
-![Screenshot 2025-04-30 230112](https://github.com/user-attachments/assets/0ca7e2a6-e911-48a6-8943-103d74885b62)
+![Screenshot 2025-05-22 234306](https://github.com/user-attachments/assets/bc8eec76-0cc5-45d4-8766-525ef94462c3)
+
 
 ## RESULT:
 
@@ -147,7 +152,7 @@ Write a c program to find the sum of odd digits using for loop
 
 1.	Declare variables to store the input number and the sum of odd digits.
 	
-2. Initialize the sum of odd digits to 0.
+2.  Initialize the sum of odd digits to 0.
    
 3.	Use a for loop to iterate through each digit of the input number.
    
@@ -183,7 +188,8 @@ int main() {
 }
 ```
 ## OUTPUT:
-![Screenshot 2025-04-30 230440](https://github.com/user-attachments/assets/1b723d70-ce9f-4a9f-b085-61b1039419ec)
+![Screenshot 2025-05-22 234420](https://github.com/user-attachments/assets/7ddf3230-ed4b-45ab-b078-8f1bb536d8d0)
+
 
 
 ## RESULT:
@@ -230,7 +236,8 @@ int factorial(){
 }
 ```
 ## OUTPUT:
-![Screenshot 2025-04-30 230810](https://github.com/user-attachments/assets/35d3ad31-3507-49a9-b0dc-b5c1be3223f6)
+![Screenshot 2025-05-22 234534](https://github.com/user-attachments/assets/02021869-719b-478a-b8bd-110a5f80ef86)
+
 
 
 ## RESULT:
