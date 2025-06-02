@@ -1,252 +1,186 @@
-# EX-06 - Looping
 ## Name:Raha Priya Dharshini M
 ## Reg no.:212224240124
+# EX-01-Datatypes-Operators
 ## AIM:
-Write a C program to print even numbers ranging from M to N (including M and N values) in reverse order.
+Write a C program to read 3 characters one by one and print the characters in a reverse order.
 
 ## ALGORITHM:
-1.	Declare two integer variables to store the values of M and N.
-   
-2.	Use the printf function to prompt the user to enter the values of M and N.
-   
-3.	Use the scanf function to read the values of M and N from the user.
-   
-4.	Use a loop (for or while) to iterate from M to N.
-   
-5.	Inside the loop, check if the current number is even.
-   
-6.	If the current number is even, print it in reverse.
-   
-8.	Continue the loop until you have iterated through all numbers from M to N.
+1.	Declare three character variables to store the input characters.
+2.	Use the scanf function to read the characters one by one from the user.
+3.	Print the characters in reverse order using the printf function.
+4.	End the program.
 
 ## PROGRAM:
-```#include<stdio.h>
-int main()
-{
-    int m,n,i;
-    scanf("%d%d",&m,&n);
-    for (i=n;i>=m;i--)
-    if(i%2==0)
-    printf("%d ",i);
-    
- 
-    return 0;
-}
-```
-
-## OUTPUT:
-![Screenshot 2025-05-22 233834](https://github.com/user-attachments/assets/a9e0d8c0-3daf-4a27-8b3e-32d1048e2411)
-
-
-## RESULT:
-Thus the program to print even numbers ranging from M to N (including M and N values) has been executed successfully
- 
- 
-
-
-# EX-07-Nested-loop
-
-## AIM:
-
-Write a C program to print the given triangular pattern using loop.
-
-## ALGORITHM:
-
-1.	Declare a variable to store the number of rows in the triangle.
-   
-2.	Use the printf function to prompt the user to enter the number of rows.
-   
-3.	Use a loop (for or while) to iterate through each row.
-   
-4.	Inside the loop, use another loop to print the desired numbers for each row.
-  
-5.	Continue the loop until you have printed the entire triangular pattern.
-
-## PROGRAM:
-```#include<stdio.h>
-int main()
-{
-    int i,j,n;
-    scanf("%d",&n);
-    for(i=1;i<=n;i++){
-        for(j=1;j<=i;j++){
-            printf("%d",n-i+1);
-        }printf("\n");
-    }
-return 0;
-}
-```
-
+![image](https://github.com/user-attachments/assets/d0cb1364-47f0-4a3b-b18e-c2baef7f3749)
 
 
 ## OUTPUT:
-![Screenshot 2025-05-22 233932](https://github.com/user-attachments/assets/2719ba09-e7ab-4b4f-afe7-d8f60f78f052)
+![image](https://github.com/user-attachments/assets/4988a1b4-8849-4902-b766-24965e4c1eea)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 ## RESULT:
-
-Thus the program to print the given triangular pattern using loop has been executed successfully
- 
- 
+Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
 
 
-# EX-08-Functions
-
+# EX-02- Conditional-Statements
 ## AIM:
+Write a C program to read A values and check whether A is positive number or not.
 
-Write a C program to perform addition and subtraction of two numbers using functions (with argument and without return type).
+# ALGORITHM:
+1.	Declare a variable to store the input value A.
+2.	Use the scanf function to read the value of A from the user.
+3.	Check if the value of A is greater than zero.
+4.	If A is greater than zero, print a message indicating that it's a positive number. 
+5.	Otherwise, print a message indicating that it's not a positive number.
+6.End the program.
+
+# PROGRAM:
+![image](https://github.com/user-attachments/assets/5c957216-b1c7-4584-9ab2-d4b2bed60527)
+
+
+
+# OUTPUT:
+![image](https://github.com/user-attachments/assets/10794c2c-8361-45bd-9ce6-3a59f33337bd)
+
+
+
+
+
+
+
+
+
+
+
+# RESULT:
+Thus the program to read A values and check whether A is positive number or not has been executed successfully.
+ 
+ 
+ 
+
+
+# EX-03- Operators-Expressions
+## AIM:
+Write a program to find minimum between two fraction numbers using conditional operator or ternary operator.
 
 ## ALGORITHM:
-
-1.	Declare two functions, one for addition and one for subtraction. Both functions should take two integer arguments.
-   
-2.	Inside the addition & subtraction function, add & subtract the two numbers and print the result.
-   
-3.	In the main function, declare two integer variables and read their values from the user.
-   
-4.	Call the addition and subtraction functions. 
+1.	Declare variables to store the two fraction numbers and the result.
+2.	Use the printf function to prompt the user to enter the first fraction number (numerator and denominator separately).
+3.	Use the scanf function to read the numerator and denominator of the first fraction.
+4.	Repeat steps 2 and 3 to get the second fraction from the user.
+5.	Calculate the decimal values of both fractions by dividing the numerators by the denominators.
+6.	Use the conditional (ternary) operator to compare the decimal values and store the minimum value in the result variable.
+7.	Print the minimum value.
 
 ## PROGRAM:
-```
-#include <stdio.h>
 
-void add(int a, int b) {
-    int sum = a + b;
-    printf("Addition: %d + %d = %d\n", a, b, sum);
-}
+![image](https://github.com/user-attachments/assets/3b9f22bb-f70b-460d-abd5-ad856668bf52)
 
-void subtract(int a, int b) {
-    int diff = a - b;
-    printf("Subtraction: %d - %d = %d\n", a, b, diff);
-}
 
-int main() {
-    int num1, num2;
 
-    printf("Enter two numbers: ");
-    scanf("%d %d", &num1, &num2);
 
-    add(num1, num2);
-    subtract(num1, num2);
-
-    return 0;
-}
-
-```
 ## OUTPUT:
-![Screenshot 2025-05-22 234306](https://github.com/user-attachments/assets/bc8eec76-0cc5-45d4-8766-525ef94462c3)
+
+![image](https://github.com/user-attachments/assets/20eee4d6-3295-458e-84e2-99a38762d90e)
+
+
+
+
+
+
+
+
+
+
 
 
 ## RESULT:
+Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
 
-Thus the program to perform addition and subtraction of two numbers using functions has been executed successfully
- 
- 
-# EX-09-Use For Loop
+
+
+
+# EX-04- Using Conditional Statements
 
 ## AIM:
-
-Write a c program to find the sum of odd digits using for loop
+Write a C program to check whether the input value is equal to 1 using simple if statement
 
 ## ALGORITHM:
+1.	Declare a variable to store the input value.
+2.	Use the scanf function to read the input value from the user.
+3.	Use an if statement to check if the input value is equal to 1.
+4.	If the condition in the if statement is true, print a message indicating that the input value is equal to 1.
+5.	Otherwise, print a message indicating that it's not equal to 1.
+6.	End the program.
 
-1.	Declare variables to store the input number and the sum of odd digits.
+## PROGRAM:
+
+![image](https://github.com/user-attachments/assets/c0b96cc3-2ccb-4dee-a0ce-df4100da337c)
+
+## OUTPUT:
+
+![image](https://github.com/user-attachments/assets/1659edda-f87d-49fb-97e0-dcbd0e7e8158)
+
+
+
+
+
+
+
+
+
 	
-2.  Initialize the sum of odd digits to 0.
-   
-3.	Use a for loop to iterate through each digit of the input number.
-   
-4.	Inside the loop, extract the rightmost digit of the number (using the modulo operator % and division by 10).
-   
-6.	If the digit is odd, add it to the sum of odd digits.
-   
-7.	Print the sum of odd digits.
-
-## PROGRAM:
-```
-#include <stdio.h>
-
-int main() {
-    int start, end, sum = 0;
-
- 
-    scanf("%d", &start);
-
-    scanf("%d", &end);
-
-
-    for (int i = start; i <= end; i++) {
-        if (i % 2 != 0) { 
-            printf("%d  ", i);
-            sum += i;
-        }
-    }
-
-    printf("\n%d", sum);
-
-    return 0;
-}
-```
-## OUTPUT:
-![Screenshot 2025-05-22 234420](https://github.com/user-attachments/assets/7ddf3230-ed4b-45ab-b078-8f1bb536d8d0)
-
-
 
 ## RESULT:
-
-Thus the program to find the sum of odd digits using for loop has been executed successfully.
-
+Thus the program to check whether the input value is equal to 1 using simple if statement has been executed successfully
 
 
 
-# EX – 10 - Factorial of a Number Using a Function
+# EX-05- Calculating Total, Percentage, And Division Using Conditional Statements 
 ## AIM:
-To write a C program that calculates the factorial of a given number using a user-defined function.
-
+To write a C program that reads marks of three subjects, calculates the total and percentage, and then determines the division (First, Second, Pass, or Fail) based on the percentage and minimum marks criteria.
 ## ALGORITHM:
-1.Start
-2.Declare the function fact().
-3.In the main() function, call the fact() function.
-4.In fact() function: a. Declare variables i, N, and fact (initialized to 1). b. Read an integer N from the user. c. Use a for loop from 1 to N: i. Multiply fact by i in each iteration. d. After the loop, print the factorial value.
-5.End
-
+1.	Start
+2.	Declare integer variables m1, m2, m3 for marks, and float variables tot, per.
+3.	Input the marks for three subjects.
+4.	Calculate total marks: tot = m1 + m2 + m3
+5.	Calculate percentage: per = tot / 3
+6.	Display total and percentage.
+7.	Check if all marks are greater than or equal to 40:
+8.	If yes:
+a.	If percentage >= 60: Print “Division = First”
+b.	Else if percentage >= 48: Print “Division = Second”
+c.	Else if percentage >= 36: Print “Division = Pass”
+9.	Else: Print “Division = Fail”
+10.	End
 ## PROGRAM:
-```
-#include <stdio.h>
 
-void factorial(int n) {
-    unsigned long long fact = 1;
+![image](https://github.com/user-attachments/assets/5ea9f706-e944-494d-b2c4-d6219313773c)
 
-    for (int i = 1; i <= n; i++) {
-        fact *= i;
-    }
 
-    printf("Factorial of %d is %llu\n", n, fact);
-}
 
-int main() {
-    int num;
 
-    printf("Enter a non-negative integer: ");
-    scanf("%d", &num);
-
-    if (num < 0) {
-        printf("Factorial is not defined for negative numbers.\n");
-    } else {
-        factorial(num);
-    }
-
-    return 0;
-}
-
-```
 ## OUTPUT:
-![Screenshot 2025-05-22 234534](https://github.com/user-attachments/assets/02021869-719b-478a-b8bd-110a5f80ef86)
+
+![image](https://github.com/user-attachments/assets/fbac9c24-8afd-4159-b63b-e126f7e9d232)
 
 
 
 ## RESULT:
-The program correctly computes the factorial of a given number using a separate function and displays the result.
- 
+The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
+
