@@ -96,7 +96,7 @@ Thus the program to print the given triangular pattern using loop has been execu
 
 ## AIM:
 
-Write a C program to perform addition and subtraction of two numbers using functions (without argument and without return type).
+Write a C program to perform addition and subtraction of two numbers using functions (with argument and without return type).
 
 ## ALGORITHM:
 
@@ -111,27 +111,29 @@ Write a C program to perform addition and subtraction of two numbers using funct
 ## PROGRAM:
 ```
 #include <stdio.h>
-int num1, num2; 
-void input() {
-    scanf("%d", &num1);
-    scanf("%d", &num2);
+
+void add(int a, int b) {
+    int sum = a + b;
+    printf("Addition: %d + %d = %d\n", a, b, sum);
 }
 
-void add() {
-    int result = num1 + num2;
-    printf("Addition: %d\n", result);
-}
-void subtract() {
-    int result = num1 - num2;
-    printf("Subtraction: %d\n", result);
+void subtract(int a, int b) {
+    int diff = a - b;
+    printf("Subtraction: %d - %d = %d\n", a, b, diff);
 }
 
 int main() {
-    input();    
-    add();        
-    subtract();  
+    int num1, num2;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    add(num1, num2);
+    subtract(num1, num2);
+
     return 0;
 }
+
 ```
 ## OUTPUT:
 ![Screenshot 2025-05-22 234306](https://github.com/user-attachments/assets/bc8eec76-0cc5-45d4-8766-525ef94462c3)
@@ -201,39 +203,44 @@ Thus the program to find the sum of odd digits using for loop has been executed 
 
 # EX – 10 - Factorial of a Number Using a Function
 ## AIM:
-To write a C program that calculates the factorial of a given number using function.
+To write a C program that calculates the factorial of a given number using a user-defined function.
 
 ## ALGORITHM:
-1.	Start
-2.	Declare the function factorial().
-3.	In the main() function, call the factorial() function.
-4.	In factorial() function:
-5.	Declare variables i, N, and fact (initialized to 1).
-6.	Read an integer N from the user.
-7.	Use a for loop from 1 to N:
-8.	Multiply fact by i in each iteration.
-9.	After the loop, print the factorial value.
-10.	End
+1.Start
+2.Declare the function fact().
+3.In the main() function, call the fact() function.
+4.In fact() function: a. Declare variables i, N, and fact (initialized to 1). b. Read an integer N from the user. c. Use a for loop from 1 to N: i. Multiply fact by i in each iteration. d. After the loop, print the factorial value.
+5.End
 
 ## PROGRAM:
 ```
-#include<stdio.h>
-int factorial();
+#include <stdio.h>
 
-int main(){
-    int result;
-    result=factorial();
-    printf("Factorial value is: %d",result);
+void factorial(int n) {
+    unsigned long long fact = 1;
+
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+
+    printf("Factorial of %d is %llu\n", n, fact);
+}
+
+int main() {
+    int num;
+
+    printf("Enter a non-negative integer: ");
+    scanf("%d", &num);
+
+    if (num < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+    } else {
+        factorial(num);
+    }
+
     return 0;
 }
-int factorial(){
-    int n,i,fact=1;
-    scanf("%d",&n);
-    for(i=1;i<=n;i++){
-    fact *=i;
-    }
-    return fact;
-}
+
 ```
 ## OUTPUT:
 ![Screenshot 2025-05-22 234534](https://github.com/user-attachments/assets/02021869-719b-478a-b8bd-110a5f80ef86)
